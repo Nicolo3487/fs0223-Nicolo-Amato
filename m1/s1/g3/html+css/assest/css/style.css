@@ -7,9 +7,9 @@
     text-align: center;
 }
 div{
-    margin-right: 500px;
-    margin-left: 500px;
-    font-size: 120%;
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size: 150%;
 }
 .p1 {
     border: 1 px solid rgb(236, 188, 84);
@@ -34,4 +34,9 @@ div{
 hr{
     
     border-color:  rgba(85, 253, 253, 0.3);
+}
+.video{
+    border-radius: 10px;
+    width: auto;
+    height: auto;
 }
