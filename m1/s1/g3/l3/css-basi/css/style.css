@@ -1,0 +1,52 @@
+div{color: red;}
+
+/*i commenti in css si scrivono cosi*/
+/* selettore{regole/propietà: valore
+             regole/propietà: valore
+             regole/propietà: valore
+            regole/propietà: valore
+            regole/propietà: valore
+            regole/propietà: valore
+            }
+vicine la regola piu in basso
+*/
+
+/*  tag =>peso 1
+    class = peso 10
+    id= peso 100
+    inline style = peso 1000
+*/
+
+a{/*tutti gli elemnti con il tag <a>*/
+    color: #000;
+}
+.colore-rosso{/*peso 10*/
+    /*tutti gli elemnti di colore-rosso*/
+    color: red !important;/* important da priorità alla regola...evitare quando si può*/
+}
+.sfondo-verde{
+    background-color: green;
+}
+#colore-blu{/*peso 100*/
+    color: blue;
+}
+/*selezione figli*/
+p b{color: aqua;}
+
+.paragrafo-speciale b,
+.paragrafo-speciale em {color: pink;}
+
+:root{font-size: 20px;}
+
+#p1{font-size: 16px;}
+
+#p2{font-size: 1.5rem;}
+
+#p3{font-size: 1em;}
+
+h1{color: rgb(255,0,0);
+    font-family:'Roboto' ;
+    font-weight: 400;
+}
+
+@font-face{font-family: Arial, Helvetica, sans-serif; src: url();}
