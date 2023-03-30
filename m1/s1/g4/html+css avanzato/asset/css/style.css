@@ -1,64 +1,230 @@
-/* IMPOSTAZIONI GENERALI */
 :root{
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    margin: 25px;
 }
-h1, h2, h3, h4 h5, h6{
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 50px;
+    padding: 20px;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h4{
+    font-size: 1.4rem;
+}
+
+h6{
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
-#background{
+
+p{
+    font-size: 1.3rem;
+    padding: 20px;
+    line-height: 20px;
+}
+
+body{
     width: auto;
     background-image: url(../img/sfondo.png);
-    background-size: cover;
-    background-attachment: fixed;
+    background-size:cover ;
+    background-repeat: repeat-y;  
 }
-h1{ font-size: 2.5rem ;}
-h2
 
-/* HEADER */
-.header-q1{width: auto;
+#main-header{
+    width: auto;
     height: 300px;
-    margin: 25px;
-    background-image: linear-gradient(30deg, #456a7b, #449abe);
+    background-image: linear-gradient( 35deg, #45617b, #449abe);
+}
+
+#logo-area{
+    width: 75%;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-bottom: 25px;  
+}
+
+#sub-header{
+    font-size: 1.3rem;
     text-align: center;
     color: white;
 }
 
-.logo-area{
-    align-content: center;
-    padding: 35px;
-    margin-left:  25px;
-    margin-right: 25px;
-} 
+#list{
+    font-size: 1.3rem;
+    text-align: center;
+    list-style: none;
+    line-height:27px;
+    padding: 25px;
+    color: white;
+}
 
-/* MAIN */
-.main-q{
-    margin: 25px;
-    padding: 15px;
+.link{
+    color: white;  
+}
+
+.invs-container{
+    width: auto;
+    height: 30px;
+
+}
+
+#white-container{
     width: auto;
     height: auto;
     background-color: white;
+    padding-top: 50px;
 }
 
+.sub-titolo{
+    color: #CCD2D6;
+}
 
+.two-lists{
+    font-size: 1.3rem;
+    padding-left: 60px;
 
+}
+li{
+    padding-right: 10px;
+    line-height: 20px;
+}
 
-/* ELEMENTI NEL MAIN - ARTICLE */
+.button{
+    height: 25px ;
+    padding: 0;
+    border: 1px solid black;
+    background-color: #CFD1D3;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: 'Poppins',sans-serif;
+}
+strong{
+    font-weight: bold;
+}
 
-/* TABELLE */
+.css-color{
+        color: #8E1780;
+}
 
-/* FORM */
+.link-two{
+    color: #577c8d;
+    font-weight: bold;
+}
 
-/* ELEMENTI NELL' ASIDE */
+#video{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
 
-/* FOOTER */
-
-
-
-
-
-
-/*background-image: url(../img/sfondo.png);
-    background-size: cover;
-    background-attachment: fixed;
+.lit-cont{
     width: auto;
-    height: auto;*/
+    height: 100px;
+    background-color:#E1E1E2;
+    padding: 20px;
+}
+.tit-h3{
+    text-align: center;
+}
+
+.lit-cont2{
+    width: auto;
+    height: 30px;
+    background-color:#E1E1E2;
+    text-align: center;
+}
+.styled-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.3rem;
+    min-width: 400px;
+    box-shadow:  0 0 20px rgba(0, 0, 0,0.15);
+}
+.styled-table thead tr{
+    background-color: #4668C0;
+    color: white;
+    text-align: left;
+}
+.styled-table th, .styled-table td{
+    padding: 12px 15px;
+}
+.styled-table tbody tr{
+    border-bottom: 1px solid black;
+}
+.styled-table tbody tr:nth-of-type(even){
+    background-color: #F1F1F1;
+}
+.styled-table tbody tr:last-of-type{
+    border-bottom: 2px solid #4668C0;
+}
+
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+fieldset{
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2.5em;
+
+}
+footer{
+        background: rgb(53,53,53);
+        background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+        box-shadow: 0 3px 3px #444;
+        color: #f0f0f0;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.2rem;
+}
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}

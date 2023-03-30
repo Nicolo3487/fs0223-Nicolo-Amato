@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML+CSS Avanzato</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/font-awesome.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <title>EPICODE - IL BLOG DEI DEVELOPERS</title>
 </head>
-
 <body>
-    <div id="background">
-        <header class="">
-            <div class="logo-area">
-                <img src="asset/img/logo.svg" alt="logo-epicode">
-            </div>
-            <b> EPICODE - IL BLOG DEI DEVELOPERS</b><br>
-            <a href="#">HOME</a><br>
-            <a href="#">ARTICOLI</a><br>
-            <a href="#">LAVORA CON NOI</a><br>
-        </header>
-        <main class="main-q">
-            <section>
-                <h1>Come creare un template per i post</h1>
-                <br>
-                <p><i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p><br>
-                <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
-                    applicare a
-                    tutte le pagine</p>
-                <br>
-                <figcaption>Le varie aree saranno quindi suddivise in:</figcaption>
-                <br>
-                <ul>
-                    <li>Contenuti di intestazione del tag header</li>
-                    <li>Contenuti centrali variabili del tag &lt;main&gt;</li>
-                    <li>Contenuti di fine pagina da inserire nel tag &lt;footer&gt;</li>
-                </ul>
-                <p>
-                    Formattaazione del codice il testo dell'articolo dovrà essere formattato per identificare tutte le parti
-                    da
-                    selezionare con i CSS. Perciò i passi saranno:</p>
-                <ol>
-                    <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
-                    <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'altro verso il basso</li>
-                    <li>Applicare gli stili CSS</li>
-                </ol>
-            </section>
-            <section>
-                <p>L'applicazione di stili CSS è cresciuta negli ultimi anni fino a raggiungere la diffusione pressoché
-                    totale</p>
-                <table>
+    <header id="main-header">
+        <div id="logo-area">
+            <img src="asset/img/logo.svg">
+        </div>
+        <div id="sub-header">
+            <b>EPICODE - IL BLOG DEI DEVELOPERS</b>
+        </div>
+        <div >
+            <ul id="list">
+            <li>&#8658;<a class="link" href="#home">HOME</a>&#8656;</li>
+            <li>&#8658;<a class="link" href="#articles">ARTICOLI</a>&#8656;</li>
+            <li>&#8658;<a class="link" href="#jobs">LAVORI CON NOI</a>&#8656;</li>
+           </ul>
+        </div>   
+    </header>
+    <div class="invs-container"></div>   
+    <main id="white-container">
+        <h1>Come creare un template per i post</h1>
+            <p class="sub-titolo"><i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p><br>
+            <p>
+                La prima cosa da fare è suddividere in blocchi logici la pagina, identificando <strong class="css-color">le parti comuni</strong>  da applicare a tutte le pagine
+            </p><br>
+
+            <ul class="two-lists">
+                <li>Contenuti di intestazione del tag <button class="button">&lt;header&gt;</button></li>
+                <li>Contenuti centrali variabili del tag <button class="button">&lt;main&gt;</button></li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag <button class="button">&lt;footer&gt;</button></li>
+            </ul>
+            <p>
+                Formattaazione del codice il testo dell'articolo dovrà essere formattato per identificare tutte le parti
+                da <strong class="css-color">selezionare con i CSS</strong>. Perciò i passi saranno:
+            </p>
+            <ol class="two-lists">
+                <li>Progettare su carta il markup finale,assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni  a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gli stili CSS</li>
+            </ol>
+            <p>L' applicazione di stili CSS è cresciuta negli ultimi anni fino a raggiungere la diffusione pressoché totale</p>
+                <table class="styled-table">
                     <caption>Diffusione dei CSS</caption>
                     <thead>
                         <tr>
@@ -91,33 +88,58 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
-            <p>Un test di validazione potrà essere fatto tramite il <a href="#">tool online</a> dedicato allo scopo. Una
+            <p>Un test di validazione potrà essere fatto tramite il <a class="link-two" href="#">tool online</a> dedicato allo scopo. Una
                 volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
-                loro:</p>
-            <iframe width="auto" height="315" src="https://www.youtube.com/embed/JRJNvxoh844" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <section>
-                <h3>NOVITÀ</h3>
-                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
-                <input type="email" placeholder="inserisci l'email" name="email">
-                <button>Iscriviti!</button>
-            </section>
-            <article>
-                <h3>ARTICOLI CORRELATI</h3>
-                <div class=""><a href="#">Validare il codice HTML</a><br><i class="fas fa-tag"></i> Categoria:develop</div>
-                <div class=""><a href="#">Correggere la sintassi</a><br><i class="fas fa-tag"></i> Categoria:develop</div>
-                <div class=""><a href="#">Meno Kb nella pagina</a><br><i class="fas fa-tag"></i> Categoria:develop</div>
-            </article>
-        </main>
-        <footer>Blog Epicode &copy;2021 <br> 
-            Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi
-            Einaudi 2 - Milano. <br> 
-            P.IVA 00112233. <a href="#">info@epicode.school</a>
-        </footer>
-    </div>
-</body>
+                loro:
+            </p>
+            <iframe id="video" src="https://www.youtube.com/embed/JRJNvxoh844" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+            <div class="invs-container"></div>
+        <section class="lit-cont">
+            <h3 class="tit-h3">NOVITÀ</h3>
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+            <form  method="POST"action="elabora_form.php">
+                <fieldset>
+                    <input type="email" placeholder="inserisci l'email" name="email" required>
+                    <button type="submit">Iscriviti!</button>
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <h2>Articoli correlati</h2>
+            <div>
+                <a href="post2.html"
+                    title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice
+                    HTML</a>
+                <p><i class="fas fa-tag"></i> Categoria: develop</p>
+                <p><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
+            </div>
 
+            <div>
+                <a href="post3.html"
+                    title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la
+                    sintassi</a>
+                <p><i class="fas fa-tag"></i> Categoria: develop</p>
+                <p><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+            </div>
+
+            <div>
+                <a href="post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
+                    pagina</a>
+                <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
+                <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
+            </div>
+        </aside>
+    </main>
+    <hr>
+    <footer>
+        <p>Blog Epicode &copy;2021</p>
+        <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+            00112233. <a href="mailto:info@epicode.school"
+                title="contattami per informazioni/lavoro/privacy">info@epicode.school</a></address>
+    </footer>  
+</body>
 </html>
