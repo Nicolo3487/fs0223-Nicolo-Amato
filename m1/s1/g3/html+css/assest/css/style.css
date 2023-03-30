@@ -4,6 +4,7 @@
 }
 
 .img{
+    max-width: 100%;
     text-align: center;
 }
 div{
@@ -12,8 +13,9 @@ div{
     font-size: 150%;
 }
 .p1 {
-    border: 1 px solid rgb(236, 188, 84);
+    border-top: 1 px solid rgb(236, 188, 84);
     background-color:rgba(236, 188, 84,0.75);  
+    height: 50px;
 }
 .p1{
     color:rgb(23, 92, 71);
@@ -26,6 +28,7 @@ div{
 .g1{
     color: rgba(128, 128, 128, 0.65);
     text-align: center;
+    margin: 0 auto;
 
 }
 .link{
@@ -39,4 +42,10 @@ hr{
     border-radius: 10px;
     width: auto;
     height: auto;
+}
+
+figure{
+    
+    line-height: 120%;
+    
 }
