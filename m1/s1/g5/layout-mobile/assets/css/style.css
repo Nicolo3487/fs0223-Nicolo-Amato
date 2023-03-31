@@ -4,7 +4,9 @@ html{font-size: 100%;}
 body{
     font-family: 'Open Sans', sans-serif;
     color: #393d41;
-    font-size: 2rem;  
+    font-size: 2rem;
+    line-height: 1.5;  
+    
 }
 h1, h3{
     color: #25a2c3;
@@ -14,6 +16,8 @@ h1, h3{
 h1{
     font-size: 3.4rem;
     font-weight: bold;
+    line-height: 1.2;
+    
     
     margin-bottom: 1rem;
     padding-top: 4rem;
@@ -27,11 +31,11 @@ h3{
 p{
     font-size: 1.2rem;
     text-align: center;
-    line-height: 1.65;
+    
 
     margin-left: 1em;
     margin-right: 1em;  
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 a{
@@ -45,7 +49,7 @@ header{
     background-color: black;
     margin-bottom:0;
     padding: 2em 0;
-}
+}  
 
 /*Main*/
 main{
@@ -70,10 +74,14 @@ button {
 
     color: white;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 
-    padding: 10px 20px 10px 20px;
-    margin-top: 0.5em;
-    margin-bottom: 1.7em;
+    padding: 15px 40px 15px 40px;
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+    
+    
 }
 
 /*Section-two*/
@@ -90,8 +98,7 @@ button {
     height: 300px;
 
     border-radius: 100%;
-    margin-top: 30px ;
-    margin-bottom: 50px;
+    margin-bottom: 1.5em;
 }
 
 /*Section n.3*/
@@ -109,7 +116,7 @@ em{
 }
 #testimonials{
     width: auto;
-    height: 300px;
+    height: auto;
 
     background-color: #e22d0e ;
     text-align: center;
