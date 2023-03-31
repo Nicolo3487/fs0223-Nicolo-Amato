@@ -31,12 +31,13 @@ p{
 
     margin-left: 1em;
     margin-right: 1em;  
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 a{
     color: #c8e7f0;
     font-size: 1.2rem ;
+    letter-spacing: 0.03em;
 }
 /*Header*/
 header{
@@ -116,12 +117,18 @@ em{
     padding-top: 50px;
     padding-bottom: 35px;
 }
+h6{
+    font-size: 1.6rem;
+    padding-bottom: 0.07rem;
+    padding-top: 2rem;
+
+}
 .white{
-    padding-top:1.8rem ;
+    
     color: white;
 }
 .small{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -178,4 +185,8 @@ hr{
     margin-left: 2em;
 }
 
-/**/
+i{
+    color: white;
+    margin-right: 0.03em;
+    
+}
