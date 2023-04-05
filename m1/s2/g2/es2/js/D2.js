@@ -89,6 +89,5 @@ console.log(name1 === name2)
 //extra
 let text = "Hello World!";
 let result = text.toLowerCase();
-
 document.getElementById().innerHTML = result;
 

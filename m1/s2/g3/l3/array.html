@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrVuoto = [];
+
+        let numeri = [0,2,5,7,9];
+
+        document.write(numeri);
+
+        let pizze = [
+            'Margherita',
+            'Diavola',
+            'Marinara'
+        ]
+        //lettura
+        console.log(pizze[1]);
+        //scrittura
+        pizze[2] = 'Mimosa'
+        console.log(pizze);
+        //verifico che l'elemento 4 esista prima di assegnarvi un valore
+
+        //per evitare la creazione di buchi
+        if(pizze[4] != undefined){
+            pizze[4] = 'Boscaiola';
+            console.log(pizze);//da evitare
+        }
+        //attenzione a non creare buchi
+        
+        //aggiungere alla fine di un array evitando buchi
+        pizze.push('Boscaiola', 'Napoli')//<= metodo migliore
+        console.log(pizze);
+        
+        //leggere la lunghezza degli array( e delle stringhe)
+        console.log(pizze.length);
+        let stringa ='Normalize pizza mimosa';
+        console.log(stringa.length);
+
+        //lettura dell'ultimo elemento dell'array
+        console.log(pizze[pizze.length - 1]);
+
+        //array multidimensionali
+        let arr =[
+            1,
+            2,
+            50,
+            ['a','b','c',[
+                {
+                    p1: 'Hello World'
+                },
+                {
+                    p1: 'Ciao Mondo'
+                }
+                ]
+            ]
+        ]
+        
+        console.log(arr[3][1]);
+        console.log(arr[3][3][1].p1);
+
+        let lettere  = ['b','z','c','v','e']
+        lettere.sort();//riordina in ordine alfabetico
+        lettere.reverse();//inverte l'ordine attuale
+            console.log(lettere);
+
+        //per riordinare in base al valore numerico
+        let numbers = [1,100,22,35,65]
+        numbers.sort();
+        console.log(numbers)
+
+
+    </script>
+</body>
+</html>
