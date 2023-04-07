@@ -72,6 +72,7 @@ h3{
 /*MAIN*/
 main{
     background-color: #E9EDEE ;
+    
 }   
 
 #bigcontainer{
@@ -84,8 +85,8 @@ main{
     background-color:#F56600;
     color: white;
     text-align: center;
-   padding-top: 5px;
-   padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .banner{
     background-image:url(../img/bg-image.png);
