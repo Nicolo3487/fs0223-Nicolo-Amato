@@ -130,15 +130,15 @@ console.log(risultato7);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+/*
 
 function upperFirst(phase){
 
-    let parole = phase.split(" ");
+    let words = phase.split(" ");
 
-    for(i = 0; i < parole.length; i++){
-        let parola = parole[i];
-        let upper = word.chatAt[0].toUpperCase();
+    for(i = 0; i < phase.length; i++){
+        let words = phase[i];
+        let upper = words.chatAt[0].toUpperCase();
         words = upper + words.slice(1)
     }
     let result = words.join(" ");
@@ -146,10 +146,22 @@ function upperFirst(phase){
     }
     
 const  phase = "Difficile questo esercizio";
-result = upperFirst(phase);
+result = upperFirst(phase);*/
 
+function upperFirst(string){
+    let words = string.split(" ");
+    upper = [];
+    for(let word of words){
 
+        let firstLetter = word[0].toUpperCase();
+        word = firstLetter + word.slice(1);
+        upper.push(word)
+    }
+    return upper.join(' ');
+}
 
+let risulta = upperFirst('Difficile questo esercizio');
+console.log(risulta);
 
 
 
