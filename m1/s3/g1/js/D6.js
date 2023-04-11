@@ -129,41 +129,19 @@ console.log(risultato7);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-/*
-
 function upperFirst(phase){
-
-    let words = phase.split(" ");
-
-    for(i = 0; i < phase.length; i++){
-        let words = phase[i];
-        let upper = words.chatAt[0].toUpperCase();
-        words = upper + words.slice(1)
-    }
-    let result = words.join(" ");
-    return result
-    }
-    
-const  phase = "Difficile questo esercizio";
-result = upperFirst(phase);*/
-
-function upperFirst(string){
-    let words = string.split(" ");
-    upper = [];
-    for(let word of words){
-
-        let firstLetter = word[0].toUpperCase();
-        word = firstLetter + word.slice(1);
+    let words = phase.split(' ');
+    let  upper = [];
+    for(i = 0;i < words.length; i++){
+        let word = words[i]
+        let first = word[0].toUpperCase();
+        word = first + word.slice(1);
         upper.push(word)
     }
-    return upper.join(' ');
+    return upper.join(' ')
 }
-
-let risulta = upperFirst('Difficile questo esercizio');
-console.log(risulta);
-
-
+let risultato8 = upperFirst('difficile questo esercizio')
+console.log(risultato8)
 
 
 /* ESERCIZIO 9
