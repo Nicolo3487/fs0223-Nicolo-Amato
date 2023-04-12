@@ -266,8 +266,14 @@ console.log(getFilm("Lord of the Flies"))
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
-function sumYears(){
-  let totalYears = movies.reduce((total, currentYear) => total + currentYear.Year, 0)
-  return totalYears
+/*function sumYears(){
+  let totalYears = movies.reduce((total, currentYear) => total.Year + currentYear.Year, 0)
+  
 }
-console.log(sumYears())
+console.log(sumYears())*/
+function sumYears(){
+  return movies.reduce(function(p,c){
+    return p + Number(c.Year);
+  },0)
+}
+console.log(sumYears());
