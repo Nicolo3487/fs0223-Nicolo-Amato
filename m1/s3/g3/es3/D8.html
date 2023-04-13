@@ -156,18 +156,28 @@
       */
 
     const makeItClickable = function () {
-
-
+      let h1 = document.querySelector('h1');
+      let testoArr = h1.innerText.split('');
+      testoArr.pop();
+      let testoNew = testoArr.join('');
+      h1.textContent = testoNew;
     }
+
+    document.querySelector('h1')
+      .addEventListener('click', makeItClickable);  
+    
+    
 
     /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
     const revealFooterLink = function () {
-
-
+      //let footer = document.querySelector('footer');
+      let url = document.querySelector('a').href;
+      alert(url);
     }
+    document.querySelector('footer').addEventListener('click', revealFooterLink);
 
     /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
@@ -175,9 +185,25 @@
     */
 
     const generateTable = function () {
+      let target = document.querySelector('#tableArea');
+      let table = document.createElement('table');
+      let tbody = document.createElement('tbody')
+      let thead = document.createElement('thead');
+      let tr = document.createElement('tr');
 
 
+      thead.append(tr);
+      table.append(thead, tbody);
+      target.append(table);
+
+      let column = ['immagini', 'nome prodotto', 'quantità', 'prezzo'];
+      for(let colum of column){
+        let th = document.createElement('th');
+        th.textContent = colum;
+        tr.append(th);
+      }
     }
+    generateTable();
 
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
