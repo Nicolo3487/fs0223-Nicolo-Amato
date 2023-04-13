@@ -215,6 +215,16 @@ for(i = 0; i < movies.length; i++){
 }
 console.log(olderFilm())
 
+/* function getOlderMovie(){
+  let olderMovie = null;
+  for (let currentMovie of movies){
+    if(olderMovie == null || olderMovie.Year > currentMovie.Year){
+      olderMovie = currentMovie;
+    }
+  }
+  return olderMovie;
+}
+console.log(getOlderMovie())
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
@@ -259,9 +269,6 @@ function getFilm(imdbID){
   }
 }
 console.log(getFilm("Lord of the Flies"))
-
-
-
 
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
