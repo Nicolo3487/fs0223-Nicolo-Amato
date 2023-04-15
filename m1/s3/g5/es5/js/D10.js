@@ -542,9 +542,3 @@ function addCss(){
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-
-
-
-
-
-
