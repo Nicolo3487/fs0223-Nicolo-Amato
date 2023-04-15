@@ -348,7 +348,7 @@ console.log(onlyTheYears());
 function onlyInLastMillennium(){
   let millennio = [];
   for(i = 0; i < movies.length; i++){
-    if(movies[i].Year >= 2000){
+    if(movies[i].Year <= 2000){
       millennio.push(movies[i])
     }
   }
@@ -424,9 +424,10 @@ function stampaTable() {
   let allTd = document.querySelectorAll('td')
   for (i = 0; i < allTd.length; i++) {
     let contentTd = allTd[i].textContent;
+   console.log(contentTd);
   }
 }
-console.log(stampaTable());
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
@@ -447,8 +448,10 @@ function addElemul(){
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 function nullList(){
-  let myList = document.getElementById('myList');
-  myList.innerHTML = '';
+  let myList = document.getElementById('myList')();
+  let allUlist = document.querySelectorAll('li');
+  allUlist.forEach(li => myList.remove(li))
+  console.log(myList);
  }
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
@@ -472,7 +475,14 @@ function addCss(){
   ***
 
 */
-
+function halfTree(n) {
+  let str = "";
+  for(i = 0; i < n; i++) {
+    str = str.concat("*");
+      console.log(str);
+  }
+}
+halfTree(3);
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -484,10 +494,35 @@ function addCss(){
   *****
 
 */
-
+function tree(num) {
+  for (let i = 0; i < num; i++) {
+    let astr = '';
+    let space = ((num - 1) - i);
+    if (i == 0) {
+      astr += ''.repeat(space);
+    }
+    astr += ' '.repeat(space);
+    let zero = 2 * i + 1;
+    astr += '*'.repeat(zero);
+    console.log(astr);
+  }
+}
+tree(10);
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-
+let num = prompt("Inserisci un numero");
+function isItPrime(num){
+  if (num == 1|| num == 2){
+    return true;
+  }
+  for( var i = 2; i < num; i++){
+    if(num % i == 0){
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isItPrime(num));
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
