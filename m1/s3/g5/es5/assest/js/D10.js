@@ -76,7 +76,6 @@ console.log(me);
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-console.log('Es.1');
 function dice(max = 7){
 return n = Math.floor(Math.random()*max)
 }
@@ -85,7 +84,6 @@ console.log(dice());
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
-console.log('Es.2');
 function whoIsBigger( x=12, y= 51){
   if(x < y){
     return y
@@ -100,7 +98,6 @@ console.log(whoIsBigger());
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
-console.log('Es.3');
 function splitMe( str ="I love coding"){
   let words = str.split(' ');
   let newArr = [];
@@ -116,7 +113,6 @@ console.log(splitMe());
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
-console.log('Es.4');
 function deleteOne( stringa, booleano){
   if(booleano === true){
     return stringa.slice(1,7)
@@ -131,7 +127,6 @@ console.log(deleteOne("epicode",false));
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
-console.log('Es.5');
 function onlyLetters(str = 'I have 5 cats'){
   return str.replace(/[0-9\b]?/g,"")//cercato online (g= global search, b = blank)
   }
@@ -140,7 +135,6 @@ console.log(onlyLetters())
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-console.log('Es.6');
 function isThisAnEmail(stringa){
   if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(stringa)){
     return true
@@ -154,7 +148,6 @@ console.log(isThisAnEmail('epicode.com'));
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-console.log('Es.7');
 function whatDayIsIt(){
   const time = Date.now();
   const today= new Date(time);
@@ -174,7 +167,6 @@ console.log(whatDayIsIt());
       values: [3, 3, 4]
   }
 */
-console.log('Es.8');
 function rollTheDices(num){
 let sum = 0;
 let values = [];
@@ -190,7 +182,6 @@ console.log(rollTheDices());
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-console.log('Es.9')
 function howManyDays(data) {
   let now = new Date().getTime();
   let differez = now - new Date(data).getTime();
@@ -203,7 +194,6 @@ console.log(days);
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
-console.log('Es.10')
 function isTodayMyBirthday(dayO, month) {
   let today = new Date();
   let monthDay = today.getMonth() + 1;
@@ -217,8 +207,6 @@ function isTodayMyBirthday(dayO, month) {
 isTodayMyBirthday(4, 10); 
 
 // Arrays & Oggetti
-
-
 
 /* ESERCIZIO 11
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
@@ -350,7 +338,6 @@ const movies = [
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
-console.log('Es.12');
 function newestMovie(){
   let newMovie = [];
   for(i = 0; i < movies.length; i){
@@ -363,7 +350,6 @@ console.log(newestMovie());
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
-console.log('Es.13');
 function countMovies(){
   return movies.length;
 }
@@ -372,7 +358,6 @@ console.log(countMovies());
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
-console.log('Es.14');
 function onlyTheYears(){
   let movieYears = [];
   for(i = 0; i < movies.length; i++){
@@ -385,7 +370,6 @@ console.log(onlyTheYears());
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
-console.log('Es.15');
 function onlyInLastMillennium(){
   let millennio = [];
   for(i = 0; i < movies.length; i++){
@@ -400,7 +384,6 @@ console.log(onlyInLastMillennium());
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
-console.log('Es.16');
 function sumAllTheYears(){
   return movies.reduce(function(p,c){
     return p + Number(c.Year);
@@ -411,7 +394,6 @@ console.log(sumAllTheYears());
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-console.log('Es.17');
 function searchByTitle(stringa){
   let thatFilm = [];
   for(i = 0; i < movies.length; i++){
@@ -427,7 +409,6 @@ console.log(searchByTitle('Avengers'));
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
-console.log('Es.18');
 function searchAndDivide(stringa){
   let match = [];
   let unmatch = [];
@@ -445,7 +426,6 @@ console.log(searchAndDivide('Lord'));
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
-console.log('Es.19');
 function removeIndex(num){
   movies.splice(num,1);
   return movies;
