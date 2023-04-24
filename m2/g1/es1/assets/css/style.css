@@ -221,10 +221,11 @@ iframe {
   float: left;
 
 }
-#underline{
-  position: static;
-  top:45px;
-  right: 50px;
+#customUnder{
+  top: -40px;
+  right: 80px;
+  float: right;
+  position: relative;
   
   
 }
