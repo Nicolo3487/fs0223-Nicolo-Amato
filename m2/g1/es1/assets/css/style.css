@@ -221,11 +221,13 @@ iframe {
   float: left;
 
 }
-#customUnder{
-  top: -40px;
-  right: 80px;
-  float: right;
+
+.class{
   position: absolute;
+}
+#customUnder{
+  position:absolute;
+
   
   
 }
