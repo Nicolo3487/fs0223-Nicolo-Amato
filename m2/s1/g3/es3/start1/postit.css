@@ -30,13 +30,16 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    animation-name: fallDown;
+    animation-duration: 2s;
+    /*animation-delay: 2s;*/
     
 }
 
 #post1{
    background: linear-gradient(to bottom, #FDFDCB, 80%,#BDBDA3 95%);
    transform: rotate(-5deg);
-   transition: 1s ease-in;
+   transition: 0.7s ease-in;
 }
 #post1:hover{
     transform: rotate(0deg) scale(1.2);
@@ -46,7 +49,7 @@ p{
 #post2{
    background: linear-gradient(to bottom,#CAFACA, 80%,#9EB5A1 95%);
    transform: rotate(5deg);
-   transition: 1s ease-in;
+   transition: 0.7s ease-in;
 }
 #post2:hover{
     transform: rotate(0deg) scale(1.2);
@@ -56,7 +59,7 @@ p{
 #post3{
     background: linear-gradient(to bottom,#C9C9F7, 80%, #8B8C9B 95%);
     transform: rotate(-7deg);
-    transition: 1s ease-in;
+    transition: 0.7s ease-in;
 }
 #post3:hover{
     transform: rotate(0deg) scale(1.2);
@@ -66,7 +69,7 @@ p{
 #post4{
     background: linear-gradient(to bottom,#CAFACA, 80%,#9EB5A1 95%);
     transform: rotate(5deg);
-    transition: 1s ease-in;
+    transition: 0.7s ease-in;
 }
 #post4:hover{
     transform: rotate(0deg) scale(1.2);
@@ -76,7 +79,7 @@ p{
 #post5{
     background: linear-gradient(to bottom, #FDFDCB, 80%,#BDBDA3 95%);
     transform: rotate(-5deg) ;
-    transition: 1s ease-in;
+    transition: 0.7s ease-in;
 }
 #post5:hover{
     transform: rotate(0deg) scale(1.2);
@@ -86,7 +89,7 @@ p{
 #post6{
     background: linear-gradient(to bottom,#C9C9F7, 80%, #8B8C9B 95%);
     transform: rotate(-7deg);
-    transition: 1s ease-in;
+    transition: 0.7s ease-in;
 }
 #post6:hover{
     transform: rotate(0deg) scale(1.2);
@@ -96,7 +99,7 @@ p{
 #post7{
     background: linear-gradient(to bottom, #FDFDCB, 80%,#BDBDA3 95%);
     transform: rotate(-5deg);
-    transition: 1s ease-in;
+    transition: 0.7s ease-in;
 }
 #post7:hover{
     transform: rotate(0deg) scale(1.2);
@@ -106,9 +109,22 @@ p{
 #post8{
     background: linear-gradient(to bottom,#CAFACA, 80%,#9EB5A1 95%);
     transform: rotate(5deg);
-    transition: 1s ease-in;
+    transition: 0.7s ease-in;
 }
 #post8:hover{
     transform: rotate(0deg) scale(1.2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+@keyframes fallDown{
+    from{
+        scale: 2;
+        opacity: 0;
+        z-index: 1;
+    }
+    1%{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
 }
