@@ -30,9 +30,9 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    animation-name: fallDown;
+    /*animation-name: fallDown;
     animation-duration: 4s;
-    animation-delay: 2s;
+    animation-delay: 2s;*/
     
 }
 
@@ -40,6 +40,8 @@ p{
    background: linear-gradient(to bottom, #FDFDCB, 80%,#BDBDA3 95%);
    transform: rotate(-5deg);
    transition: 0.7s ease-in;
+   animation: fallDown 1s linear 1s backwards;
+   
 }
 #post1:hover{
     transform: rotate(0deg) scale(1.2);
@@ -50,6 +52,7 @@ p{
    background: linear-gradient(to bottom,#CAFACA, 80%,#9EB5A1 95%);
    transform: rotate(5deg);
    transition: 0.7s ease-in;
+   animation: fallDown 1s linear 2s backwards;
 }
 #post2:hover{
     transform: rotate(0deg) scale(1.2);
@@ -60,6 +63,7 @@ p{
     background: linear-gradient(to bottom,#C9C9F7, 80%, #8B8C9B 95%);
     transform: rotate(-7deg);
     transition: 0.7s ease-in;
+    animation: fallDown 1s linear 3s backwards;
 }
 #post3:hover{
     transform: rotate(0deg) scale(1.2);
@@ -70,6 +74,7 @@ p{
     background: linear-gradient(to bottom,#CAFACA, 80%,#9EB5A1 95%);
     transform: rotate(5deg);
     transition: 0.7s ease-in;
+    animation: fallDown 1s linear 4s backwards;  
 }
 #post4:hover{
     transform: rotate(0deg) scale(1.2);
@@ -80,6 +85,7 @@ p{
     background: linear-gradient(to bottom, #FDFDCB, 80%,#BDBDA3 95%);
     transform: rotate(-5deg) ;
     transition: 0.7s ease-in;
+    animation: fallDown 1s linear 5s backwards;
 }
 #post5:hover{
     transform: rotate(0deg) scale(1.2);
@@ -90,6 +96,7 @@ p{
     background: linear-gradient(to bottom,#C9C9F7, 80%, #8B8C9B 95%);
     transform: rotate(-7deg);
     transition: 0.7s ease-in;
+    animation: fallDown 1s linear 6s backwards;
 }
 #post6:hover{
     transform: rotate(0deg) scale(1.2);
@@ -100,6 +107,7 @@ p{
     background: linear-gradient(to bottom, #FDFDCB, 80%,#BDBDA3 95%);
     transform: rotate(-5deg);
     transition: 0.7s ease-in;
+    animation: fallDown 1s linear 7s backwards;
 }
 #post7:hover{
     transform: rotate(0deg) scale(1.2);
@@ -110,6 +118,7 @@ p{
     background: linear-gradient(to bottom,#CAFACA, 80%,#9EB5A1 95%);
     transform: rotate(5deg);
     transition: 0.7s ease-in;
+    animation: fallDown 1s linear 8s backwards;
 }
 #post8:hover{
     transform: rotate(0deg) scale(1.2);
