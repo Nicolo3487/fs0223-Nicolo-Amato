@@ -149,16 +149,6 @@ header{
 
 
 /*ARTICLES*/
-.article{
-    display: flex;
-    flex-direction: column;
-}
-.articleColumn{
-    margin-left: 150px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-}
 .profileStruct2{
     gap: 10px;
     font-weight: bold; 
@@ -176,24 +166,9 @@ header{
     align-items: baseline;
     gap: 10px;
     color: #757575;
-    width: 500px;
+    
 }
-.icons{
-    display: flex;
-    align-items: right;
-    gap: 10px;
-       
-}
-.imageArt{
-   display: flex;
-   justify-content: space-between;
-   flex-direction: row;
-   width: 800px;
-   height: 200px;
-   margin-bottom: 30px;
-}
-.image{
-    width: 200px;
-    height: 200px;
-    display: flex;
+article{
+    margin-left: 150px;
+    margin-top: 40px;
 }
