@@ -87,6 +87,17 @@ header{
 .main-title{
     padding: 70px 150px; 
 }
+.buttonBig{
+    background-color: #191919; 
+    color:white;
+    border-radius: 7em;
+    border: none;
+    width: 300px;
+    height: 65px;
+    padding: 5px; 
+    margin-top: 50px;
+    font-size: 1.1em;
+}
 /*TRENDING*/
 .trendTitle{
     padding: 40px 150px 0px 150px;
@@ -110,7 +121,6 @@ header{
    display: flex;
    align-items: baseline;
    gap: 10px;
-
 }
 .minititle{
     margin-left: 45px;
@@ -129,7 +139,6 @@ header{
     gap: 10px;
     color: #757575;
 }
-
 /*ARTICLES*/
 .profileStruct2{
     gap: 10px;
@@ -163,6 +172,7 @@ article{
 /*LINK PAGE*/
 .container{
     display: flex;
+    margin-bottom: 40px;
     
 }
 .matterTag{
@@ -171,6 +181,7 @@ article{
     top: 80px;
     z-index: 10;
     display: flex;  
+    margin-top: 40px;
 }
 .tagPosition{
     width: 400px;
@@ -178,6 +189,8 @@ article{
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: #757575 solid 2px;
 }
 .buttonTag{
     background-color:transparent; 
@@ -190,8 +203,21 @@ article{
     padding: 7px;
 
 }
+.tagPosition2{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+   
+    
+}
 .container footer{
     display: flex;
     flex-direction: column;
     margin-left: 30px;  
+}
+.more{
+    color: #1a8917;
+    margin-top: 15px;
 }
