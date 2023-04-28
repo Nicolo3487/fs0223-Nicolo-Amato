@@ -161,7 +161,7 @@ article{
 }
 
 /*LINK PAGE*/
-.bigcontainer{
+.container{
     display: flex;
     
 }
@@ -172,8 +172,26 @@ article{
     z-index: 10;
     display: flex;  
 }
+.tagPosition{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 15px;
+}
 .buttonTag{
     background-color:transparent; 
     color:#E9E6E3;
     border:none;
+    width: auto;
+    height: 40px;
+    border-radius: 1em;
+    border: #757575 solid 2px;
+    padding: 7px;
+
+}
+.container footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;  
 }
