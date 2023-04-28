@@ -214,3 +214,8 @@ article{
     color: #1a8917;
     margin-top: 15px;
 }
+
+/*ANIMATION*/
+.changeColor{
+    background-color: white;
+}
