@@ -1,6 +1,5 @@
 body{
     font-family: 'Roboto', sans-serif;
-
 }
 h1{
     font-size: 7em;
@@ -9,7 +8,6 @@ h1{
 }
 h3{
     font-size: 1.5em;
-    
 }
 h4{
     font-size: 1.4em;
@@ -157,8 +155,7 @@ header{
     display: flex;
     align-items: baseline;
     gap: 10px;
-    color: #757575;
-    
+    color: #757575;  
 }
 article{
     margin-left: 150px;
@@ -168,7 +165,6 @@ article{
 .imageArt{
     margin-left: 100px;
 }
-
 /*LINK PAGE*/
 .container{
     display: flex;
@@ -201,7 +197,6 @@ article{
     border-radius: 1em;
     border: #757575 solid 2px;
     padding: 7px;
-
 }
 .tagPosition2{
     width: 400px;
@@ -209,8 +204,6 @@ article{
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 15px;
-   
-    
 }
 .container footer{
     display: flex;
