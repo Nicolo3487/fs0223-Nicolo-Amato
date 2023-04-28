@@ -171,4 +171,5 @@ header{
 article{
     margin-left: 150px;
     margin-top: 40px;
+    display: flex; 
 }
