@@ -129,24 +129,6 @@ header{
     gap: 10px;
     color: #757575;
 }
-/*LINK PAGE*/
-.bigcontainer{
-    display: flex;
-    
-}
-.matterTag{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 80px;
-    z-index: 10;
-    display: flex;  
-}
-.buttonTag{
-    background-color:transparent; 
-    color:#E9E6E3;
-    border:none;
-}
-
 
 /*ARTICLES*/
 .profileStruct2{
@@ -156,6 +138,7 @@ header{
 .minititle2{
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 500px;
 }
 .preview{
     color: #757575;
@@ -172,4 +155,25 @@ article{
     margin-left: 150px;
     margin-top: 40px;
     display: flex; 
+}
+.imageArt{
+    margin-left: 100px;
+}
+
+/*LINK PAGE*/
+.bigcontainer{
+    display: flex;
+    
+}
+.matterTag{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    display: flex;  
+}
+.buttonTag{
+    background-color:transparent; 
+    color:#E9E6E3;
+    border:none;
 }
