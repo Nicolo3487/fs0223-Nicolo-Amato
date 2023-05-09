@@ -16,7 +16,7 @@ cancelButton.addEventListener('click', function (e) {
     nameField.value = ''
 })
 
-var CountDownDate = new Date().getTime();
+/*var CountDownDate = new Date().getTime();
 var time = setInterval(function () {
     var now = new Date().getTime();
     var distance = now - CountDownDate;
@@ -28,11 +28,24 @@ var time = setInterval(function () {
     
     document.getElementById("time").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
-})
+})*/
 
-/*const restoreContent = function () {
-    let prevTime = sessionStorage.getItem('time', time)
-    if (prevTime) {
-        time = prevTime}
-        else{}
-    }*/
+   /* let seconds = sessionStorage.getItem("time") || 0;
+    const timeElement = document.getElementById("time");
+    function displayTime(){
+        seconds++;
+        timeElement.textContent = seconds;
+        sessionStorage.setItem("time", seconds)
+    }
+    const time = setInterval(displayTime, 1000);*/
+
+    let timeElement = document.getElementById("time");
+    setInterval(()=>{
+    if(sessionStorage.getItem('time')== null) sessionStorage.setItem("time", "0");
+    else{
+        let time= Number(sessionStorage.getItem('time'));
+        timeElement.innerHTML=`${time}s`
+        time++;
+        sessionStorage.setItem("time",`${time}`)
+    }
+}, 1000)
