@@ -1,4 +1,4 @@
-console.log('esercizio-1');
+
 
 let saveButton = document.getElementById('save-button');
 let cancelButton = document.getElementById('cancel-button');
@@ -17,7 +17,7 @@ cancelButton.addEventListener('click', function (e) {
 })
 
 var CountDownDate = new Date().getTime();
-var x = setInterval(function () {
+var time = setInterval(function () {
     var now = new Date().getTime();
     var distance = now - CountDownDate;
 
@@ -29,3 +29,9 @@ var x = setInterval(function () {
     document.getElementById("time").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 })
+const restoreContent = function () {
+    let prevTime = sessionStorage.getItem('time', time)
+    if (prevTime) {
+        time = prevTime}
+        else{}
+    }
