@@ -29,9 +29,10 @@ var time = setInterval(function () {
     document.getElementById("time").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 })
-const restoreContent = function () {
+
+/*const restoreContent = function () {
     let prevTime = sessionStorage.getItem('time', time)
     if (prevTime) {
         time = prevTime}
         else{}
-    }
+    }*/
