@@ -59,5 +59,5 @@ console.log('data obtained', data)
 
 window.onload= function() {
     let primaryButton = document.querySelector('.btn-primary')
-    primaryButton.addEventListener('click',() =>{ getImages('nights')})
+    primaryButton.addEventListener('click',() => {renderCards('nights')})
 }
