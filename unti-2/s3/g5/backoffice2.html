@@ -60,10 +60,29 @@
                         </div>
                             <input type="text" class="form-control" 
                                 aria-describedby="namefield"
+                                placeholder="Nome prodotto"
                                 id="name"
                                 required
                                 />
                     </div>
+
+                    <div class="mb-3">
+                        <div class="row justify-content-between">
+                           <div class="col-4">
+                               <label for="brand" class="from-label"><b>Marca Prodotto</b></label>
+                           </div>
+                           <div class="col-4 text-end"> 
+                               <button type="button" class="btn text-primary">Modifica</button>
+                               <button type="button" class="btn text-danger">Cancella</button>
+                           </div>
+                       </div>
+                           <input type="text" class="form-control" 
+                               aria-describedby="brandfield"
+                               placeholder="Marca prodotto"
+                               id="brand"
+                               required
+                               />
+                   </div>
 
                     <div class="mb-3">
                         <div class="row justify-content-between">
@@ -77,6 +96,7 @@
                         </div>
                             <input type="text" class="form-control" 
                                 aria-describedby="descriptionField"
+                                placeholder="Descrizione prodotto"
                                 id="description"
                                 required
                                 />
@@ -94,7 +114,26 @@
                         </div>                        
                             <input type="number" class="form-control" 
                                 aria-describedby="priceField"
+                                placeholder="Prezzo prodotto"
                                 id="price"
+                                required
+                                />
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <label for="text" class="from-label"><b>Immagine (URL)</b></label>
+                            </div>
+                            <div class="col-4 text-end"> 
+                                <button type="button" class="btn text-primary">Modifica</button>
+                                <button type="button" class="btn text-danger">Cancella</button>
+                            </div>
+                        </div>                        
+                            <input type="url" class="form-control" 
+                                aria-describedby="ImageField"
+                                placeholder=" https://..."
+                                id="imageUrl"
                                 required
                                 />
                     </div>
