@@ -2,6 +2,7 @@ console.log("Running")
 const PRODUCTS_url = "https://striveschool-api.herokuapp.com/api/product/"
 const Key = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDY4ZmExYjg3NDc2YTAwMTRiNDg3YTgiLCJpYXQiOjE2ODQ2MDE1MzksImV4cCI6MTY4NTgxMTEzOX0.6NnspGK6EfJ4csdGKK0Lhe6fc8AjvcrGMDa2tor4c_o"
 
+
 fetch(PRODUCTS_url, {
     headers: { 'Authorization': Key },
 })
@@ -14,32 +15,33 @@ fetch(PRODUCTS_url, {
 })
 .then((prod) =>{
     console.log('Prod', prod)
-    let mainRow = document.getElementById('products-container')
-    prod.forEach((el)=> {
-        let col= document.createElement('div')
-        col.classList.add('col-12 col-md-3')
-        col.innerHTML =`
-        <div class="card shadow-md my-2">
-            <img src="${el.imageUrl}" class="card-image-top" alt="image">
-            <div class="card-body">
-                <h5 class="card-title">${el.name}</h5>
-                <div class="card-text">
-                <p>${el.brand}</p>
-                <p>${el.description}</p>
+    prod.forEach((prod)=> {
+        let col= `
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+        <div class="card shadow-md">
+            <img src="${prod.imageUrl}" alt="image" class="p-2">
+            <div>
+                <h4 class="card-title mx-2">${prod.name}</h4>
+                <p class="card-text mx-3">Marca: ${prod.brand}</p>
+                <p class="card-text mx-3">Descrizione:<br>${prod.description}</p>
+                <p class="card-text mx-3">Prezzo: ${prod.price} $</p>
+                <div class="row justify-content-between">
+                    <div class="col-5 text-start m-2">
+                        <a href="./detail.html?prod_id=${prod._id}" class="btn btn-outline-info">Scorpi di più</a>
+                    </div>
+                    <div class="col-5 text-end m-2">
+                        <a href="./backoffice.html?prod_id=${prod._id}" class="btn btn-primary">Modifica</a>
+                    </div>
                 </div>
-                <p>Costo: ${el.price}$</p>
             </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center">
-            <button type="button" class="btn btn-outline-info>
-            <a class="nav-link active" href="">Scopri di più</a></button>
-            <button type="button" class="btn btn-outline-primary">
-            <a class="nav-link active" href="./backoffice2.html">Modifica</a></button>
-        </div>
-        `
-    mainRow.appendChild(col)
+    </div>`
+
+    let rowMain = document.getElementById('products-container')
+    rowMain.innerHTML += col
     })
 })
-.catch((error)=>{
-    console.log(error)
+.catch((err)=>{
+console.log(err)
 })
+
