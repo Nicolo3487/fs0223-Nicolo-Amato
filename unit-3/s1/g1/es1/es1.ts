@@ -8,9 +8,9 @@ console.log('giocatore 2 :',player2);
 let numRandom = Math.floor(Math.random()*100)
 console.log('numero casuale :',numRandom);
 
-let diff_1 = Math.abs(player1 - numRandom);
+let diff_1:Number = Math.abs(player1 - numRandom);
 
-let diff_2 = Math.abs(player2 - numRandom);
+let diff_2:Number = Math.abs(player2 - numRandom);
 /*
 if (diff_1 < diff_2) {
     console.log('Nessuno ha azzeccato il numero casuale,ma il giocatore 1 si è avvicinato di più');
