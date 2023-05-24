@@ -1,14 +1,53 @@
 "use strict";
-class User {
-    constructor(balance, saldo) {
+class sonAccount {
+    constructor(balance) {
         this.balanceInit = balance;
-        this.saldoAttuale = saldo;
     }
-    information() {
-        return `Balance: ${this.balanceInit}, saldo: ${this.saldoAttuale}`;
+    deposit(amount) {
+        return amount;
+    }
+    oneWithdraw(amount) {
+        return amount;
+    }
+    twoWithdraw(amount) {
+        return amount;
+    }
+    totalBalance() {
+        return this.oneWithdraw(700) - this.twoWithdraw(400);
     }
 }
-let sonAccount = new User(0, '0');
-console.log('sonAccount :', sonAccount.information());
-let motherAccount = new User(1500, '3000');
-console.log('motherAccount :', motherAccount.information());
+let son = new sonAccount(0);
+console.log(son);
+console.log('deposit', son.deposit(1000));
+console.log('one Withdraw', son.oneWithdraw(400));
+console.log('two Withdraw', son.twoWithdraw(200));
+console.log('totalBalance', son.totalBalance());
+class MotherAccount extends sonAccount {
+    constructor(balanceInit) {
+        super(balanceInit);
+    }
+    deposit(amount) {
+        return amount;
+    }
+    oneWithdraw(amount) {
+        return amount;
+    }
+    twoWithdraw(amount) {
+        return amount;
+    }
+    getBalance() {
+        return this.oneWithdraw(700) - this.twoWithdraw(400);
+    }
+    addInterest(rate) {
+        return (this.getBalance() * rate) / 100;
+    }
+    totalBalance() {
+        return this.getBalance() - this.addInterest(10);
+    }
+}
+let mother = new MotherAccount(0);
+console.log(mother);
+console.log('deposit', mother.deposit(1000));
+console.log('one Withdraw', mother.oneWithdraw(400));
+console.log('two Withdraw', mother.twoWithdraw(200));
+console.log('totalBalance', mother.totalBalance());
