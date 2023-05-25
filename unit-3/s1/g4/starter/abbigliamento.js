@@ -1,19 +1,6 @@
 "use strict";
 class Dress {
-    constructor(id, codprod, collezione, capo, modello, quantita, colore, prezzoivaesclusa, prezzoivainclusa, disponibile, saldo) {
-        this.id = id;
-        this.codprod = codprod;
-        this.collezione = collezione;
-        this.capo = capo;
-        this.modello = modello;
-        this.quantita = quantita;
-        this.colore = colore;
-        this.prezzoivaesclusa = prezzoivaesclusa;
-        this.prezzoivainclusa = prezzoivainclusa;
-        this.disponibile = disponibile;
-        this.saldo = saldo;
-    }
-    getData(obj) {
+    constructor(obj) {
         this.id = obj.id;
         this.codprod = obj.codprod;
         this.collezione = obj.collezione;
@@ -26,9 +13,16 @@ class Dress {
         this.disponibile = obj.disponibile;
         this.saldo = obj.saldo;
     }
+    mostraPrezzo() {
+        return this.saldo + '$';
+    }
 }
 fetch('Abbigliamento.json')
     .then((res) => res.json())
     .then((res) => {
-    console.log(res);
+    let arr = [];
+    res.forEach((el) => {
+        arr.push(new Dress(el));
+    });
+    console.log(arr, arr[0].mostraPrezzo());
 });
