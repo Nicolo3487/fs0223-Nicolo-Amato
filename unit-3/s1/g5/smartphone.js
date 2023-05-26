@@ -16,19 +16,18 @@ class Smartphone {
     getRegistroChiamate() {
         console.log(this.registroChiamate);
     }
-    filtraChiamatePerDataOra(data, ora) {
-        let chiamateFiltrate = [];
+    filtraChiamatePerDataOra(d, h) {
+        let filtro = [];
         this.registroChiamate.forEach((call) => {
-            if (data == call.data.getDate() && ora == call.data.getHours()) {
-                chiamateFiltrate.push(call);
+            if (d == call.data.getDate() && h == call.data.getHours()) {
+                filtro.push(call);
             }
         });
-        if (chiamateFiltrate.length == 0) {
-            console.log("%cNON CI SONO RISULTATI", "color:red");
+        if (filtro.length == 0) {
+            console.log('non ci sono risultati');
         }
         else {
-            console.log("%cCI SONO " + chiamateFiltrate.length + " RISULTATI", "color:green");
-            console.log(chiamateFiltrate);
+            console.log(filtro);
         }
     }
     ricarica(euro) {
@@ -55,12 +54,13 @@ class Smartphone {
         this.registroChiamate.pop;
     }
 }
-let Samsung = new Smartphone(40, 10);
+let Samsung = new Smartphone(40, 0);
 Samsung.ricarica(40);
 Samsung.chiamata(50);
-Samsung.getRegistroChiamate();
-Samsung.filtraChiamatePerDataOra(26, 10);
-Samsung.azzeraChiamate;
-Samsung.chiamata;
+Samsung.chiamata(30);
+Samsung.chiamata(20);
+Samsung.chiamata(10);
 console.log(Samsung.numero404());
 console.log(Samsung.getNumeroChiamate());
+Samsung.getRegistroChiamate();
+Samsung.filtraChiamatePerDataOra(12, 10);
