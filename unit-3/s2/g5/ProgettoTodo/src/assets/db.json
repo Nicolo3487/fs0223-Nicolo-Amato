@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Fare la spesa",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Studiare per l'esame",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Andare in palestra",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "creare la pagina home",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "creare la pagina home",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "andare a fare la spesa",
+      "completed": false
+    }
+  ]
+}

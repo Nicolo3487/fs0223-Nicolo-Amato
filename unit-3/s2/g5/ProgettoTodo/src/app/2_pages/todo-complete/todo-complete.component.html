@@ -1,0 +1,11 @@
+
+
+<table class="table">
+    <tr *ngFor="let todo of todoArray">
+        <td>{{ todo.id }}</td>
+        <td>{{ todo.title }}</td>
+        <td><button (click)="toggleStatus(todo)" class="btn btn-warning">Attiva</button></td>
+    </tr>
+</table>
+
+    

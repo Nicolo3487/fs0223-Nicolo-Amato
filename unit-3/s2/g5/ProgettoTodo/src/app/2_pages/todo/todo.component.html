@@ -1,0 +1,21 @@
+
+<div *ngIf="todoArray.length === 0 && !loading" >
+    <p>non ci sono task</p>
+    <form>
+        <input [(ngModel)]="todo.title" type="text" class="form-control" placeholder="titolo" name="titolo">
+        <button (click)="create()" class="btn btn-primary">Crea</button>
+    </form>
+    
+</div>
+
+
+<table class="table">
+    <tr *ngFor="let todo of todoArray">
+        <td>{{ todo.title }}</td>
+        <td><button (click)="toggleStatus(todo)" class="btn btn-success">Completa</button></td>
+    </tr>
+</table>
+<form>
+    <input [(ngModel)]="todo.title" type="text" class="form-control" placeholder="titolo" name="titolo">
+    <button (click)="create()" class="btn btn-primary">Crea</button>
+</form>
