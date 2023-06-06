@@ -1,0 +1,50 @@
+<div class="container">
+    <h1>TD Form hero</h1>
+
+    <form (ngSubmit)="submit(f)" #f="ngForm">
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" #name="ngModel" required class="form-control" 
+                ngModel name="name" placeholder="Nome">
+            <span *ngIf="name.invalid && name.touched" 
+                class="alert alert-danger mt-1" role="alert">Devi inserire il nome</span>
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" #alterEgo="ngModel" required class="form-control" 
+                ngModel name="alterEgo" placeholder="Nickname">
+            <span *ngIf="alterEgo.invalid && alterEgo.touched"
+                class="alert alert-danger mt-1" role="alert">Devi inserire il nickname</span>
+        </div>
+        <div class="form-row row">
+            <div class="form-group col-12 mb-3">
+                <select name="power" class="form-control" ngModel name="power">
+                    <option value="" selected>--Scegli Potere</option>
+                    <option value="acqua" selected>Acqua</option>
+                    <option value="terra" selected>Terra</option>
+                    <option value="fuoco" selected>Fuoco</option>
+                    <option value="aria" selected>Aria</option>
+                </select>
+                <!--<span *ngIf="power.invalid && power.touched" role="alert">Devi inserire il pianeta</span>-->
+            </div>
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" #enemy="ngModel" class="form-control"
+            ngModel name="enemy" placeholder="Tuo nemico">
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" #planet="ngModel" required maxlength="10" class="form-control"
+                ngModel name="planet" placeholder="Pianeta">
+            <span *ngIf="planet.invalid && planet.touched"
+                class="alert alert-danger mt-1" role="alert">Devi inserire il pianeta</span>
+        </div>  
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" #weakness="ngModel" class="form-control"
+                ngModel name="weakness" placeholder="Debolezza">
+        </div>       
+        <button [disabled]="f.invalid" class="btn btn-success">Invia</button>     
+    </form>
+</div>
