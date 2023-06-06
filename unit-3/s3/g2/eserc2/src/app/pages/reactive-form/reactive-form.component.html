@@ -1,7 +1,36 @@
 <div class="container">
+    <h1>Reactive Form</h1>
     <form [formGroup]="form">
 
-        <div ></div>
+        <div class="form-group col-12 mb-3">
+            <input type="text" class="form-control" required placeholder="Nome" formControlName="name">
+        </div>
 
+        <div class="form-group col-12 mb-3">
+            <input type="text" class="form-control" required placeholder="Nickname" formControlName="nickname">
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <div formArrayName="powers">
+                <button class="btn btn-warning" (click)="addPower()">Aggiungi Potere</button>
+                <div class="form-group" *ngFor="let power of getPowers(), let i = index">
+                  <input type="text" class="form-control" [formControlName]="i">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" class="form-control" required placeholder="Tuo nemico" formControlName="enemy">
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" class="form-control" required placeholder="Pianeta" formControlName="planet">
+        </div>
+
+        <div class="form-group col-12 mb-3">
+            <input type="text" class="form-control" required placeholder="Debolezza" formControlName="weakness">
+        </div>
+
+        <button type="submit" [disabled]="form.invalid" class="btn btn-success mt-4">Crea</button>          
     </form>
 </div>
