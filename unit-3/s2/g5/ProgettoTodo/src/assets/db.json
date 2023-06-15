@@ -29,6 +29,16 @@
       "id": 6,
       "title": "andare a fare la spesa",
       "completed": false
+    },
+    {
+      "id": 7,
+      "title": "",
+      "completed": false
+    },
+    {
+      "id": 8,
+      "title": "creare la pagina home",
+      "completed": false
     }
   ]
 }
